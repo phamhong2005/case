@@ -64,10 +64,10 @@ public class ReadAndWriteFile {
         try {
             FileReader fileReader = new FileReader(file1);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-            String line = null;
-            while ((line=bufferedReader.readLine())!=null){
-                String [] data = line.split(",");
-                Staff staff = new Staff(Integer.parseInt(data[0]),data[1], Boolean.parseBoolean(data[2]),data[3]);
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                String[] data = line.split(",");
+                Staff staff = new Staff(Integer.parseInt(data[0]), data[1], Boolean.parseBoolean(data[2]), data[3]);
                 list.add(staff);
             }
             bufferedReader.close();

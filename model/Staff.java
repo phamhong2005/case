@@ -47,11 +47,6 @@ public class Staff {
 
     @Override
     public String toString() {
-        return "Staff{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", status=" + status +
-                ", employeeType='" + employeeType + '\'' +
-                '}';
+        return "Id Nhân Viên Là : " + id +"| Có Tên Là :  " + name + " | Trạng Thái Nhân Viên : "+status +"| Kiểu Nhân Viên : "+ employeeType +"\n";
     }
 }

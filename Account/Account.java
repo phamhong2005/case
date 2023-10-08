@@ -17,12 +17,8 @@ public class Account {
         return password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     @Override
     public String toString() {
-        return "Tên tài khoản : " + username + "| Mật khẩu là " + password + "\n";
+        return " Tên tài khoản : " + username + "| Mật khẩu là : " + password + "\n";
     }
 }
